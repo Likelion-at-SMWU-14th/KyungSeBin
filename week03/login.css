@@ -1,0 +1,139 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Pretendard Variable";
+  background: linear-gradient(180deg, #362a21 0%, #0d0d0d 100%);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+/* 1. 로그인 박스 */
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 37.75rem;
+  height: 39.3125rem;
+  border-radius: 1.125rem;
+  background: rgba(60, 60, 60, 0.3);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* 2. 로고 */
+header {
+  margin-top: 4.38rem;
+  display: grid;
+  place-items: center;
+  gap: 1.58rem;
+  text-align: center;
+}
+
+p {
+  margin-block: 0;
+}
+
+span {
+  color: #ee7521;
+}
+
+/* 3. 로그인 폼 */
+form {
+  margin-top: 3.13rem;
+  display: grid;
+  place-items: center;
+  gap: 0.94rem;
+}
+
+input {
+  font-family: inherit;
+  width: 34.125rem;
+  height: 4rem;
+  border-radius: 0.625rem;
+  background: #404040;
+  border: none;
+  padding-left: 1.56rem;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 136%; /* 1.53rem */
+  letter-spacing: -0.0315rem;
+}
+
+input::placeholder {
+  color: #b6b6b6;
+}
+
+input:focus,
+input:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.login_btn {
+  cursor: pointer;
+  margin-top: 1.25rem;
+  display: flex;
+  width: 34.125rem;
+  height: 4.25rem;
+  padding: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  background: #fff;
+  color: #000;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136%;
+  letter-spacing: -0.0385rem;
+}
+
+.ask_member {
+  margin-top: 1.88rem;
+  margin-bottom: 2.19rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.94rem;
+}
+
+#welcome {
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.042rem;
+}
+
+#ask_member {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 136%; /* 1.36rem */
+  letter-spacing: -0.028rem;
+}
+
+#to_signup {
+  margin-block: 0;
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 136%; /* 1.36rem */
+  letter-spacing: -0.028rem;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
