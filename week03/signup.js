@@ -6,5 +6,9 @@ function checkPassword() {
     alert("비밀번호가 달라요! 다시 확인해주세요 🦁");
     return false;
   }
+
+  const username = document.signup.username.value;
+  localStorage.setItem("userId", username);
+  
   return true;
 }
