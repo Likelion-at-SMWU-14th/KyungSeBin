@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css"/>
+    <title>🦁 회원가입</title>
+</head>
+<body>
+    <div class="signup-box">
+        <header>
+            <div>
+                <img src="./images/icon.svg" alt="Logo"/>
+                <h2>🦁 회원가입하기</h2>
+            </div>
+            <a><img src="./images/out.svg" alt="뒤로가기"></a>
+        </header>
+        <form name="signup" method="post" onsubmit="return checkPassword();">
+            <section class="signup_section">
+                <span>이름</span>
+                <input name="firstname" type="text" placeholder="김사자" required autocomplete="off"/>
+            </section>
+            <section class="signup_section">
+                <span>아이디</span>
+                <input name="username" type="text" placeholder="아이디를 입력해주세요" required autocomplete="off"/>                
+            </section>
+            <section class="signup_section">
+                <span>비밀번호</span>
+                <input id="password1" name="password1" type="password" placeholder="비밀번호를 입력해주세요" required autocomplete="new-password"/>
+            </section>
+            <section class="signup_section">
+                <span>비밀번호 확인</span>
+                <input id="password2" name="password2" type="password" placeholder="비밀번호를 다시 확인해주세요" required autocomplete="new-password"/>
+            </section>
+            <button class="signup_btn" type="submit">회원가입하기</button>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
