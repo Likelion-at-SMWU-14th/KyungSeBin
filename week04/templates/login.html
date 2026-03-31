@@ -1,0 +1,40 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+    <title>🦁 로그인</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <img src="{% static 'images/icon.svg' %}" />
+        <p id="welcome">
+          <span>숙명여대 LIKELION 14TH</span>에 오신<br />여러분을 환영합니다!
+        </p>
+      </header>
+      <form name="login" method="post">
+        {% csrf_token %}
+        <input
+          type="text"
+          name="username"
+          placeholder="아이디"
+          autocomplete="off"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="비밀번호"
+          autocomplete="new-password"
+        />
+        <button class="login_btn" type="submit">로그인하기</button>
+      </form>
+      <aside class="ask_member">
+        <p id="ask_member">아직 계정이 없으신가요?</p>
+        <a id="to_signup" href="{% url 'signup' %}" title="회원가입">회원가입하기</a>
+      </aside>
+    </div>
+  </body>
+</html>

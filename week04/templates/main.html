@@ -1,0 +1,52 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <title>🦁 메인</title>
+  </head>
+  <body>
+    {% if user.is_authenticated %}
+    <div class="box">
+      <header>
+        <div class="header-left">
+          <img class="icon" src="{% static 'images/icon.svg' %}" />
+          <h2>로그인 성공</h2>
+        </div>
+        <button type="button" class="logout-btn">
+          <a href="{% url 'logout' %}">
+            <img src="{% static 'images/out.svg' %}" alt="로그아웃" />
+          </a>
+        </button>
+      </header>
+      <div class="ment">
+        <h3>계정 로그인에 성공했습니다.</h3>
+        <p><span>{{ user.first_name }}</span> 사자님, 가입을 환영합니다!</p>
+      </div>
+      <a class="to_mypage">
+        <img src="{% static 'images/mypage.svg' %}" />
+        <p>내 프로필로 이동하기</p>
+      </a>
+    </div>
+    {% else %}
+    <div class="box">
+      <header>
+        <div class="header-left">
+          <img class="icon" src="{% static 'images/icon.svg' %}" />
+          <h2>로그인 실패</h2>
+        </div>
+      </header>
+      <div class="ment">
+        <h3>계정 로그인에 실패했습니다.</h3>
+        <p>아이디와 비밀번호를 다시 확인해 주세요.</p>
+      </div>
+      <a href="{% url 'login' %}" class="to_mypage">
+        <img src="{% static 'images/mypage.svg' %}" />
+        <p>로그인 화면으로 이동하기</p>
+      </a>
+    </div>
+    {% endif %}
+  </body>
+</html>
