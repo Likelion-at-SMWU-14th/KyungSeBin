@@ -1,21 +1,24 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./signup.css"/>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}"/>
     <title>🦁 회원가입</title>
 </head>
 <body>
     <div class="signup-box">
         <header>
             <div>
-                <img src="./images/icon.svg" alt="Logo"/>
+                <img src="{% static 'images/icon.svg' %}" alt="Logo"/>
                 <h2>회원가입하기</h2>
             </div>
-            <a><img src="./images/out.svg" alt="뒤로가기"></a>
+            <a><img src="{% static 'images/out.svg' %}" alt="뒤로가기"></a>
         </header>
         <form name="signup" method="post" onsubmit="return checkPassword();">
+            {% csrf_token %}
             <section class="signup_section">
                 <span>이름</span>
                 <input name="first_name" type="text" placeholder="김사자" required autocomplete="off"/>
@@ -35,6 +38,6 @@
             <button class="signup_btn" type="submit">회원가입하기</button>
         </form>
     </div>
-    <script src="signup.js"></script>
+    <script src="{% static 'js/signup.js' %}"></script>
 </body>
 </html>
