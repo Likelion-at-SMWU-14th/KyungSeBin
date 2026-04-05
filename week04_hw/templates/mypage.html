@@ -1,17 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🦁 자기소개 — 경세빈</title>
-    <link rel="stylesheet" href="mypage.css" />
+    <link rel="stylesheet" href="{% static 'css/mypage.css' %}" />
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="./images/icon.svg"/>
+            <img src="{% static 'images/icon.svg' %}"/>
             <h2><span>자기소개</span></h2>
-            <img src="./images/profile.jpg" class="profile-img" alt="profile" />
+            <img src="{% static 'images/profile.jpg' %}" class="profile-img" alt="profile" />
         </header>
  
         <div class="info">
@@ -40,6 +41,6 @@
         <button class="btn" type="button" onclick="checkEdit()">수정하기</button>
     </div>
  
-    <script src="mypage.js"></script>
+    <script src="{% static 'js/mypage.js' %}"></script>
 </body>
 </html>
