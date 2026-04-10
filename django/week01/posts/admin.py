@@ -16,6 +16,7 @@ class CommentInline(admin.TabularInline):
 class LikeInline(admin.TabularInline):
     model=Like
     extra=0
+    can_delete=True
     
 @admin.register(Post)
 class PostModelAdmin(admin.ModelAdmin):

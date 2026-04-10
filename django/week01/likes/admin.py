@@ -10,3 +10,4 @@ class LikeModelAdmin(admin.ModelAdmin):
     search_help_text='사용자 이름으로 검색이 가능합니다.'
     list_display_links=['id', 'post']
     ordering=['-created_at']
+   
