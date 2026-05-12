@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Based View</title>
+</head>
+<body>
+    <h1>Function Based View</h1>
+    <p>이 페이지는 {{ view_type }}로 작성된 페이지입니다.</p>
+    <a href="/fbv/">새로고침</a>
+    <form action="" method="get">
+        <input type="text" name="name" placeholder="이름을 입력해주세요.">
+        <button type="submit">제출</button>
+    </form>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="이름을 입력해주세요.">
+        <button type="submit">제출</button>
+    </form>
+</body>
+</html>
