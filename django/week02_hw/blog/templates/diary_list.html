@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>나의 일기장</title></head>
+<body>
+  <h1>📔 나의 일기장</h1>
+  {% for diary in diaries %}
+    <div>
+      <h3>{{ diary.mood }} {{ diary.title }}</h3>
+      <p>{{ diary.date }}</p>
+      <p>{{ diary.content }}</p>
+    </div>
+  {% empty %}
+    <p>아직 일기가 없습니다 😢</p>
+  {% endfor %}
+</body>
+</html>
