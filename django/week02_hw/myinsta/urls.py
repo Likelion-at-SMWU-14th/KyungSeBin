@@ -26,7 +26,8 @@ urlpatterns = [
     path('fbv/',function_view),
     path('cbv/',class_view.as_view()),
     path('cbv2/',class_view2.as_view()),
-    path('', home_view), #'' : default url -> 화면 들어가자마자 우리가 만든 화면이 뜸 ( 기존 : 404 에러가 남 )
+    # path('', home_view), #'' : default url -> 화면 들어가자마자 우리가 만든 화면이 뜸 ( 기존 : 404 에러가 남 )
     path('about/',views.introduction, name='introduction'),
     path('diary/',views.DiaryListView.as_view(), name='diary-list'),
+    path('diary/create/', views.DiaryCreateView.as_view(),name='diary-create'),
 ]

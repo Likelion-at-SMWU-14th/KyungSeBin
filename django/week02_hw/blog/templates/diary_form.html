@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>일기 작성</title>
+</head>
+<body>
+    <h1>✏️ 일기 작성</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">작성 완료</button>
+    </form>
+    <a href="/diary/">← 목록으로 돌아가기</a>
+</body>
+</html>
