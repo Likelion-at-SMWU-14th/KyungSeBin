@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 상세페이지</title>
+</head>
+<body>
+    <h1>{{ post.content }}</h1> 
+    <p>작성자 - {{ post.writer }}</p>
+    <p>작성일 - {{ post.created_at }}</p>
+
+    {% if post.image %}
+        <img src="{{ post.image.url }}" alt = "Post Image">
+    {% else %}
+        <p>이미지가 없습니다.</p>
+    {% endif %}
+</body>
+</html>
