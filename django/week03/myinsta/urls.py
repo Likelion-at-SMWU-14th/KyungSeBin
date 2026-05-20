@@ -27,8 +27,9 @@ urlpatterns = [
     path('fbv/',function_view),
     path('cbv/',class_view.as_view()),
     path('cbv2/',class_view2.as_view()),
-    path('', home_view), #'' : default url -> 화면 들어가자마자 우리가 만든 화면이 뜸 ( 기존 : 404 에러가 남 )
+    path('', home_view,name='home'), #'' : default url -> 화면 들어가자마자 우리가 만든 화면이 뜸 ( 기존 : 404 에러가 남 )
     path('posts/', include('posts.urls', namespace='posts')),
+    path('accounts/', include('accounts.urls', namespace='accounts')),
 ]
 
 if settings.DEBUG:

@@ -7,6 +7,8 @@ HOME
 {% block content %}
 <h2>인스타그램 홈 페이지입니다.</h2>
 
-<p>{{ name|upper }}님, 반갑습니다!</p>
+{% if request.user.is_authenticated %}
+    <p>{{ request.user.username|upper }}님, 반갑습니다!</p>
+{% endif %}    
 
 {% endblock %}

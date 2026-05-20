@@ -12,10 +12,7 @@ def url_view(request):
     return JsonResponse(data)
 
 def home_view(request):
-    context={
-        "name":"lion"
-    }
-    return render(request, "home.html",context)
+    return render(request, "home.html")
 
 def url_parameter_view(request,username):
     age=request.GET.get('age', None)
