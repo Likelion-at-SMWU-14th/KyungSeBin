@@ -118,16 +118,6 @@ def comment_update_view(request, post_id, comment_id):
         form=CommentForm(instance=comment)
     return render(request,'comment_update.html', {'form': form, 'comment': comment})
 
-def comment_update_view(request,post_id,comment_id):
-    comment=get_object_or_404(Comment, id=comment_id)
-    if request.method=="POST":
-        form=CommentForm(request.POST, instance=comment)
-        if form.is_valid():
-            form.save()
-        return redirect('posts:post-detail', id=post_id)
-    else:
-        form=CommentForm(instance=comment)
-    return render(request,'comment_update.html', {'form': form, 'comment': comment})
     
 class class_view(View):
 
