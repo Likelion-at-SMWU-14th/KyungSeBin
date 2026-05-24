@@ -69,7 +69,8 @@ def post_model_form_view(request):
     
 def post_detail_view(request,id):
     post=Post.objects.get(id=id)
-    context={'post': post}
+    comment_form=CommentForm()
+    context={'post': post, 'comment_form': comment_form}
     return render(request,'post_detail.html', context)
 
 def post_update_view(request, id):

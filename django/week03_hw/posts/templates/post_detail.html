@@ -16,4 +16,14 @@
         <p>이미지가 없습니다.</p>
     {% endif %}
 </body>
+<form action="{% url 'posts:comment-create' post.id %}" method="post">
+    {% csrf_token %}
+    {{ comment_form.as_p }}
+    <button type="submit">댓글 작성</button>
+</form>
+
+{% for comment in post.comment_set.all %}
+    <p>{{ comment.writer }} : {{ comment.content }}</p>
+    <a href="{% url 'posts:comment-update' post.id comment.id %}">수정</a>
+{% endfor %}
 </html>
