@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My insta{% endblock %}</title>
+</head>
+<body>
+
+    <h1>공통 Header</h1>
+        <div>
+            {% if request.user.is_authenticated %}
+                <span>로그인 상태 : {{request.user.username}}</span>
+                <form 
+                    action="{% url 'accounts:logout' %}"
+                    method="POST"
+                    style="display:inline;"
+                >
+                    {% csrf_token %}
+                    <button type="submit">로그아웃</button>
+                </form>
+            {% else %}
+                <span>비로그인 상태</span>
+                <a href="{% url 'accounts:login' %}">로그인</a>
+                <a href="{% url 'accounts:signup' %}">회원가입</a>
+            {% endif %}
+        </div>
+    <hr>
+
+    {% block content %}
+    기본 내용
+    {% endblock %}
+
+    <hr>
+    <footer>공통 Footer</footer>
+
+</body>
+</html>

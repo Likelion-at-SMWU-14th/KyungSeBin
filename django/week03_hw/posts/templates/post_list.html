@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block title %}Post List{% endblock %}
+
+{% block content %}
+<h1>Post 목록 화면</h1>
+{% for post in posts %}
+    <div>
+        <p>{{post.content}}</p>
+    </div>
+{% endfor %}
+{% endblock %}
