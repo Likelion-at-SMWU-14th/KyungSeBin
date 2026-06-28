@@ -5,14 +5,19 @@ from .serializers import UserSerializer
 from .models import User
 
 #회원가입(Create) -> /users/
-@api_view(['POST'])
+@api_view(['GET','POST'])
 def signup(request):
-    serializer = UserSerializer(data=request.data)
-    if serializer.is_valid():
-        serializer.save()
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
-    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+    if request.method=='POST':
+        serializer=UserSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data,status=status.HTTP_201_CREATED)
+        return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
+    elif request.method=='GET':
+        users=User.objects.all()
+        serializer=UserSerializer(users,many=True)
+        return Response(serializer.data,status=status.HTTP_200_OK)
+    # 처음에 POST 만 추가 -> 회원가입을 한 전체 아이디가 보이지 않고, 가장 최신 아이디만 보임 -> GET 추가 
 #회원정보 조회(Read) ->/users/<id>
 @api_view(['GET'])
 def get_user(request, user_id):
