@@ -25,6 +25,7 @@ urlpatterns = [
     path('posts/', include('posts.urls', namespace='posts')),
     path('calculator/query/', calculator_query), 
     path('calculator/body/', calculator_body),
+    path('',include('accounts.urls')),
 ]
 
 if settings.DEBUG:
