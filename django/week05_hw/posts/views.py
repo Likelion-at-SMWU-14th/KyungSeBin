@@ -22,7 +22,7 @@ class PostListView(generics.ListAPIView):
 class PostModelViewSet(ModelViewSet):
     queryset = Post.objects.all()
     
-    permission_classes=[IsAuthenticatedOrReadOnly]
+    permission_classes=[IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]
     def get_serializer_class(self):
         if self.action == "list":
             return PostListSerializer
