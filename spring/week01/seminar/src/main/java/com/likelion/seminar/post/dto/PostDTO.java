@@ -6,7 +6,7 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class postDTO {
+public class PostDTO {
 
     private String title;
 
