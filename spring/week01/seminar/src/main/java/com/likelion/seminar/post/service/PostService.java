@@ -24,4 +24,16 @@ public class PostService {
     public PostDTO getPostById(int id){
         return this.postDTOList.get(id);
     }
+    public void updatePost(int id, PostDTO postDTO){
+        PostDTO targetPost=this.postDTOList.get(id);
+        if (postDTO.getTitle()!=null){
+            targetPost.setTitle(postDTO.getTitle());
+        }
+        if (postDTO.getContent()!=null){
+            targetPost.setContent(postDTO.getContent());
+        }
+        if(postDTO.getWriter()!=null){
+            targetPost.setWriter(postDTO.getWriter());
+        }
+    }
 }
