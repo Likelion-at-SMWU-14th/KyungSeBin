@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e43cd97a-9328-4a5f-8cc4-79cbbd780d64" name="변경" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/seminar">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="seminar" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0001863109388227" />
+      <entry key="MS500" value="1.1825263416020833" />
+      <entry key="S2" value="2.049243672239073" />
+      <entry key="S5" value="3.9035870856346064" />
+      <entry key="S10" value="6.843533345266243" />
+      <entry key="S30" value="13.70840640115793" />
+      <entry key="S60" value="17.490572632601037" />
+      <entry key="M2" value="21.34720880508389" />
+      <entry key="M5" value="39.26501485216675" />
+      <entry key="M10" value="74.00801651331503" />
+      <entry key="M15" value="103.40181802842488" />
+      <entry key="M30" value="159.69339858729055" />
+      <entry key="H1" value="208.04722137862717" />
+      <entry key="H2" value="240.65859604903142" />
+      <entry key="H4" value="259.7396872018866" />
+      <entry key="D1" value="277.2933976266425" />
+      <entry key="W1" value="280.4663226873273" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="8.441015686451795E-175" />
+      <entry key="MS500" value="1.5320711743202188E-35" />
+      <entry key="S2" value="1.978425656436704E-9" />
+      <entry key="S5" value="3.3001060336466367E-4" />
+      <entry key="S10" value="0.01816619397024769" />
+      <entry key="S30" value="0.26287824640115687" />
+      <entry key="S60" value="0.5127165459989121" />
+      <entry key="M2" value="0.7161454451382183" />
+      <entry key="M5" value="0.9199730873706836" />
+      <entry key="M10" value="1.5382772984090183" />
+      <entry key="M15" value="2.553807669018417" />
+      <entry key="M30" value="5.433422031854593" />
+      <entry key="H1" value="8.560173791957117" />
+      <entry key="H2" value="10.903183346505687" />
+      <entry key="H4" value="12.343400169721875" />
+      <entry key="D1" value="13.70751438669243" />
+      <entry key="W1" value="13.957796027916217" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.001061264514441412" />
+      <entry key="MS500" value="0.2573409210486026" />
+      <entry key="S2" value="1.1870279883567372" />
+      <entry key="S5" value="3.2510077401404716" />
+      <entry key="S10" value="6.35467054267348" />
+      <entry key="S30" value="13.650410890796904" />
+      <entry key="S60" value="17.79687731426798" />
+      <entry key="M2" value="21.92840760347006" />
+      <entry key="M5" value="40.06197559150035" />
+      <entry key="M10" value="75.4203049946388" />
+      <entry key="M15" value="105.83495902107711" />
+      <entry key="M30" value="165.03101179052095" />
+      <entry key="H1" value="216.5442119367203" />
+      <entry key="H2" value="251.52504361015517" />
+      <entry key="H4" value="272.06321721329056" />
+      <entry key="D1" value="290.99737032207827" />
+      <entry key="W1" value="294.4236068254879" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3GoAkGyChlZIGfTYat18JCnFWUi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.seminar [:com.likelion.seminar.SeminarApplication.main()].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "spring-1st-seminar",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/dev/2026likeliongit/KyungSeBin/spring/week01",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "to.speed.mode.migration.done": "true",
+    "애플리케이션.SeminarApplication.executor": "Run"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kkyon\OneDrive\바탕 화면\SMWU\26\멋사\2026likeliongit\KyungSeBin\spring" />
+    </key>
+  </component>
+  <component name="RunManager" selected="애플리케이션.SeminarApplication">
+    <configuration name="SeminarApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.likelion.seminar.SeminarApplication" />
+      <module name="seminar.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.likelion.seminar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeminarApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="seminar.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.likelion.seminar.SeminarApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.SeminarApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.258" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.258" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="e43cd97a-9328-4a5f-8cc4-79cbbd780d64" name="변경" comment="" />
+      <created>1784627691044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1784627691044</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
