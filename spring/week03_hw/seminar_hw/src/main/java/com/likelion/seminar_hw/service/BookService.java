@@ -1,6 +1,6 @@
 package com.likelion.seminar_hw.service;
 
-import com.likelion.seminar_hw.model.Book;
+import com.likelion.seminar_hw.dto.Book;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

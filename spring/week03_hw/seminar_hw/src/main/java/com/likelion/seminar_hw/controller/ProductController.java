@@ -1,6 +1,6 @@
 package com.likelion.seminar_hw.controller;
 
-import com.likelion.seminar_hw.model.Product;
+import com.likelion.seminar_hw.dto.Product;
 import com.likelion.seminar_hw.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

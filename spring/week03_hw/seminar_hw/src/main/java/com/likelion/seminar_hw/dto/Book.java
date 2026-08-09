@@ -1,4 +1,4 @@
-package com.likelion.seminar_hw.model;
+package com.likelion.seminar_hw.dto;
 
 public class Book {
 
