@@ -1,4 +1,4 @@
-package com.likelion.seminar_hw.model;
+package com.likelion.seminar_hw.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
