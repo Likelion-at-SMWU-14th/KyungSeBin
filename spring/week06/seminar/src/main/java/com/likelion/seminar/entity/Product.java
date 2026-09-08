@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Setter
 @Getter
@@ -38,4 +41,8 @@ public class Product extends BaseEntity{
     @ManyToOne
     @JoinColumn(name="category_id")
     private Category category;
+
+    @ManyToMany
+    @ToString.Exclude
+    private List<Producer> producers=new ArrayList<>();
 }
