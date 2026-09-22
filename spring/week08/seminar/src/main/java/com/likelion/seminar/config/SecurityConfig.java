@@ -17,9 +17,21 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/",
                                 "/join",
+                                "/login",
                                 "/h2-console/**"
                         ).permitAll()
                         .anyRequest().authenticated()
+                )
+                .formLogin(form->form
+                        .loginPage("/login")
+                        .loginProcessingUrl("/login")
+                        .defaultSuccessUrl("/",true)
+                        .permitAll()
+                )
+
+                .logout(logout->logout
+                        .logoutSuccessUrl("/")
+                        .permitAll()
                 )
 
                 .headers(headers->headers
