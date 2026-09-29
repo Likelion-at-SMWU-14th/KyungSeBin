@@ -15,6 +15,6 @@ spring:
       ddl-auto: create
     show-sql: true
 
-  jwt:
-    secret: c3ByaW5nLXNlY3VyaXR5LWp3dC1zZW1pbmFyLXNlY3JldC1rZXktMjAyNg==
-    expiration: 3600000
+jwt:
+  secret: c3ByaW5nLXNlY3VyaXR5LWp3dC1zZW1pbmFyLXNlY3JldC1rZXktMjAyNg==
+  expiration: 3600000
