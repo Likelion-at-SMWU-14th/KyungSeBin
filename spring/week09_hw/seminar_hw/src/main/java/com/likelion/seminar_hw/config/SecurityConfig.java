@@ -1,6 +1,6 @@
-package com.likelion.seminar.config;
+package com.likelion.seminar_hw.config;
 
-import com.likelion.seminar.jwt.JwtAuthenticationFilter;
+import com.likelion.seminar_hw.jwt.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
