@@ -9,6 +9,11 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./spring/week10_hw/docker-cicd-seminar
+
     steps:
       - uses: actions/checkout@v7
 
@@ -16,6 +21,7 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
+          cache-dependency-path: spring/week10_hw/docker-cicd-seminar/requirements.txt
 
       - run: python -m pip install -r requirements.txt
       - run: python -m pytest -q --cov=main --cov-fail-under=80
@@ -46,6 +52,6 @@ jobs:
 
       - uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./spring/week10_hw/docker-cicd-seminar
           push: true
           tags: ${{ steps.image.outputs.name }}:${{ github.sha }}
