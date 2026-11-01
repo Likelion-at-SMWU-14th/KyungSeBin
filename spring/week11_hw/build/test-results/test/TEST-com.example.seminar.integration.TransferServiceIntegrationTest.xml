@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.seminar.integration.TransferServiceIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-01T12:43:27.858Z" hostname="sebinui-MacBookAir.local" time="0.377">
+  <properties/>
+  <testcase name="발신인 계좌가 없으면 예외가 발생한다" classname="com.example.seminar.integration.TransferServiceIntegrationTest" time="0.324"/>
+  <testcase name="실제 DB에서 정상적인 계좌 이체가 이루어진다" classname="com.example.seminar.integration.TransferServiceIntegrationTest" time="0.037"/>
+  <testcase name="수취인 계좌가 없으면 잔액이 변경되지 않는다" classname="com.example.seminar.integration.TransferServiceIntegrationTest" time="0.007"/>
+  <system-out><![CDATA[2026-11-01T21:43:27.859+09:00  INFO 97653 --- [seminar] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.seminar.integration.TransferServiceIntegrationTest]: TransferServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-01T21:43:27.863+09:00  INFO 97653 --- [seminar] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.seminar.SeminarApplication for test class com.example.seminar.integration.TransferServiceIntegrationTest
+2026-11-01T21:43:27.864+09:00  INFO 97653 --- [seminar] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.seminar.integration.TransferServiceIntegrationTest]: TransferServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-01T21:43:27.864+09:00  INFO 97653 --- [seminar] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.seminar.SeminarApplication for test class com.example.seminar.integration.TransferServiceIntegrationTest
+Hibernate: 
+    select
+        count(*) 
+    from
+        accounts a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.amount,
+        a1_0.owner 
+    from
+        accounts a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.amount,
+        a1_0.owner 
+    from
+        accounts a1_0
+Hibernate: 
+    insert 
+    into
+        accounts
+        (amount, owner, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        accounts
+        (amount, owner, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.amount,
+        a1_0.owner 
+    from
+        accounts a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.amount,
+        a1_0.owner 
+    from
+        accounts a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    update
+        accounts 
+    set
+        amount=?,
+        owner=? 
+    where
+        id=?
+Hibernate: 
+    update
+        accounts 
+    set
+        amount=?,
+        owner=? 
+    where
+        id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.amount,
+        a1_0.owner 
+    from
+        accounts a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.amount,
+        a1_0.owner 
+    from
+        accounts a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.amount,
+        a1_0.owner 
+    from
+        accounts a1_0
+Hibernate: 
+    delete 
+    from
+        accounts 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        accounts 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        accounts
+        (amount, owner, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        accounts a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.amount,
+        a1_0.owner 
+    from
+        accounts a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.amount,
+        a1_0.owner 
+    from
+        accounts a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.amount,
+        a1_0.owner 
+    from
+        accounts a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.amount,
+        a1_0.owner 
+    from
+        accounts a1_0
+Hibernate: 
+    delete 
+    from
+        accounts 
+    where
+        id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
