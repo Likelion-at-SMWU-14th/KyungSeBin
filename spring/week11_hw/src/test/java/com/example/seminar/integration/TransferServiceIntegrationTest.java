@@ -153,20 +153,40 @@ class TransferServiceIntegrationTest {
 
         // Given
         // TODO 3-1: 발신인 계좌를 생성하고 실제 H2 DB에 저장하세요.
+        Account sender = accountRepository.save(
+                new Account(
+                        "John",
+                        new BigDecimal("1000")
+                )
+        );
 
+        Long senderId = sender.getId();
+        Long missingReceiverId = 999L;
         // TODO 3-2: 존재하지 않는 수취인 계좌 ID를 준비하세요.
         //  단위 테스트와 달리 Mock을 사용할 필요는 없습니다.
-
+        assertThat(accountRepository.existsById(missingReceiverId))
+                .isFalse();
 
         // When & Then
         // TODO 3-3: 존재하지 않는 수취인 계좌로 이체를 시도하고 예외 발생 여부를 검증하세요.
-
+        assertThatThrownBy(() ->
+                transferService.transferMoney(
+                        senderId,
+                        missingReceiverId,
+                        new BigDecimal("100")
+                )
+        )
+                .isInstanceOf(AccountNotFoundException.class)
+                .hasMessageContaining("Receiver");
         // TODO 3-4: 예외 메시지에 "Receiver"가 포함되어 있는지 확인하세요.
 
         // TODO 3-5: 실제 DB에서 발신인 계좌를 다시 조회하세요.
-
+        Account senderAfterTransfer = accountRepository
+                .findById(senderId)
+                .orElseThrow();
         // TODO 3-6: 발신인의 잔액이 1000원으로 유지되었는지 검증하세요.
-
+        assertThat(senderAfterTransfer.getAmount())
+                .isEqualByComparingTo("1000");
         //fail("TODO: 수취인 없음 통합 테스트를 완성하세요.");
     }
 }
